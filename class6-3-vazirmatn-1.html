@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>کلاس ششم ۳ | پایگاه افتخار</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f4f7fb;--panel:#fff;--ink:#17233b;--muted:#71809a;--line:#e5ebf4;--primary:#4f46e5;--primary2:#7c3aed;--green:#0f9f6e;--gold:#f5a623;--red:#e05252;--shadow:0 12px 35px #2538580d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn","Vazir","IRANSansX",Tahoma,"Segoe UI",sans-serif;line-height:1.7}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:10px 15px;background:var(--primary);color:white;font-weight:700;transition:.2s}button:hover{filter:brightness(1.06);transform:translateY(-1px)}button.secondary{background:#eef0ff;color:#4338ca}button.ghost{background:#f1f5f9;color:#334155}button.danger{background:#fee2e2;color:#b91c1c}
+.app{display:grid;grid-template-columns:245px 1fr;min-height:100vh}.sidebar{background:#171d3a;color:#e8eaff;padding:26px 18px;display:flex;flex-direction:column;gap:25px}.brand{display:flex;gap:12px;align-items:center;font-weight:800;font-size:18px}.logo{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#818cf8,#6d28d9);font-size:23px}.brand small{display:block;font-size:11px;color:#aeb6d9;font-weight:500}.nav{display:grid;gap:8px}.nav button{background:transparent;color:#c4cbe5;text-align:right;font-weight:600;padding:12px}.nav button.active,.nav button:hover{background:#2a3158;color:#fff}.side-note{margin-top:auto;background:#252c50;padding:15px;border-radius:16px;font-size:12px;color:#c6ccee}.side-note strong{display:block;color:white;margin-bottom:5px}
+main{padding:28px;min-width:0}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:24px}.eyebrow{color:var(--primary);font-weight:800;font-size:12px}.topbar h1{margin:2px 0;font-size:26px}.top-actions{display:flex;gap:10px;align-items:center}.date-pill{background:white;border:1px solid var(--line);border-radius:12px;padding:9px 13px;color:var(--muted);font-size:13px}
+.hero{background:linear-gradient(120deg,#3730a3,#6d28d9 70%,#8b5cf6);color:white;border-radius:24px;padding:27px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;box-shadow:var(--shadow);overflow:hidden;position:relative}.hero:after{content:"✦";position:absolute;font-size:180px;opacity:.08;left:35px;top:-60px}.hero h2{font-size:25px;margin:0 0 7px}.hero p{margin:0;color:#e4e3ff;max-width:600px}.hero-badge{background:#ffffff1e;border:1px solid #ffffff3d;padding:15px 20px;border-radius:18px;text-align:center;min-width:120px}.hero-badge strong{font-size:30px;display:block}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:20px 0}.stat,.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.stat{padding:18px}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}.stat-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#eef2ff;font-size:19px}.stat strong{font-size:27px;display:block;margin-top:10px}.stat small{color:var(--muted)}.content-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr);gap:18px}.panel{padding:21px;margin-bottom:18px;min-width:0}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}.panel h3{margin:0;font-size:17px}.muted{color:var(--muted);font-size:12px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th,td{text-align:right;padding:12px 9px;border-bottom:1px solid var(--line);font-size:13px}th{color:var(--muted);font-weight:600;background:#fafbfe}tr:last-child td{border-bottom:0}.rank{width:30px;height:30px;border-radius:10px;background:#f1f5f9;display:grid;place-items:center;font-weight:800}.student{display:flex;align-items:center;gap:9px}.avatar{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:#e0e7ff;color:#4338ca;font-weight:800}.points{font-weight:800;color:var(--primary)}.tag{display:inline-block;padding:4px 8px;border-radius:8px;background:#dcfce7;color:#047857;font-size:11px}.list{display:grid;gap:11px}.list-item{display:flex;gap:11px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}.list-item:last-child{border:0}.list-icon{width:36px;height:36px;border-radius:12px;background:#f3f0ff;display:grid;place-items:center;flex-shrink:0}.list-item strong{font-size:13px;display:block}.list-item small{color:var(--muted);font-size:11px}.progress{height:7px;border-radius:9px;background:#edf0f7;overflow:hidden;margin-top:8px}.progress span{display:block;height:100%;background:linear-gradient(90deg,#6366f1,#a78bfa);border-radius:9px}.view{display:none}.view.active{display:block}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:grid;gap:5px;font-size:12px;color:#526078}.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid #dce3ef;border-radius:11px;background:#fff;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#818cf8;box-shadow:0 0 0 3px #818cf81c}.field.full{grid-column:1/-1}.button-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.notice{padding:12px 14px;background:#eff6ff;color:#1d4ed8;border-radius:12px;font-size:12px;margin-bottom:14px}.quiz-question{padding:16px;border:1px solid var(--line);border-radius:14px;margin:12px 0}.quiz-question h4{margin:0 0 10px}.option{display:flex;gap:9px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:10px;margin:7px 0;cursor:pointer;font-size:13px}.option:has(input:checked){background:#eef2ff;border-color:#a5b4fc}.result{padding:18px;border-radius:14px;background:#f0fdf4;color:#166534;margin-top:14px}.empty{color:var(--muted);font-size:13px;padding:15px 0}.vote-option{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:12px;margin:8px 0}.vote-option button{padding:7px 11px}.week-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.day-card{border:1px solid var(--line);border-radius:14px;padding:14px}.day-card h4{margin:0 0 7px;color:var(--primary)}.day-card p{margin:5px 0;font-size:13px}.toast{position:fixed;bottom:22px;left:22px;background:#17233b;color:white;padding:12px 18px;border-radius:12px;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s;z-index:5}.toast.show{opacity:1;transform:translateY(0)}.footer{text-align:center;color:#9aa5b8;font-size:11px;padding:14px}
+@media(max-width:1050px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.content-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.app{grid-template-columns:1fr}.sidebar{padding:14px;gap:12px}.brand{font-size:16px}.nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.nav button{text-align:center;padding:9px 4px;font-size:11px}.side-note{display:none}main{padding:16px}.topbar{align-items:flex-start;flex-direction:column}.topbar h1{font-size:22px}.hero{padding:22px;align-items:flex-start;flex-direction:column}.hero h2{font-size:21px}.hero-badge{display:none}.stats{gap:10px}.stat{padding:13px}.stat strong{font-size:23px}.panel{padding:15px}.form-grid,.week-grid{grid-template-columns:1fr}.top-actions{width:100%;justify-content:space-between}}
+
+#loginGate{position:fixed;inset:0;z-index:100;background:linear-gradient(135deg,#171d3aee,#4f46e5ee);display:grid;place-items:center;padding:18px}
+.login-card{width:min(440px,100%);background:white;border-radius:22px;padding:26px;box-shadow:0 24px 70px #0003}
+.login-card h2{margin:0 0 6px}.login-card p{font-size:13px;color:#71809a;margin:0 0 18px}.login-card label{display:grid;gap:6px;margin:12px 0;font-size:13px}.login-card input,.login-card select{padding:12px;border:1px solid #dce3ef;border-radius:11px;width:100%;font:inherit}.login-error{color:#b91c1c;font-size:12px;min-height:20px}
+</style>
+</head>
+<body>
+<div id="loginGate"><form class="login-card" id="loginForm"><div class="logo" style="margin-bottom:14px;color:white">✦</div><h2>ورود به کلاس ششم ۳</h2><p>نام و نام خانوادگی‌ات را بنویس. در این نسخه ورود روی همین دستگاه ذخیره می‌شود.</p><label>نام و نام خانوادگی<input id="loginName" type="text" maxlength="60" autocomplete="name" required placeholder="نام و نام خانوادگی"></label><label>شماره تلفن<input id="loginPhone" type="tel" inputmode="numeric" autocomplete="tel" required placeholder="شماره تلفن همراه"></label><div class="login-error" id="loginError"></div><button type="submit" style="width:100%">ورود به سایت</button><p style="margin-top:14px;font-size:11px">معلم: محمد حسن اصغری</p><p style="font-size:11px;color:#9a3412">نکته امنیتی: شماره تلفن در این نسخه فقط نقش را روی همین مرورگر تعیین می‌کند و جایگزین کد تأیید پیامکی یا ورود امن سروری نیست.</p></form></div>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">✦</div><div>پایگاه افتخار<small>کلاس ششم ۳</small></div></div>
+  <nav class="nav" aria-label="منوی اصلی">
+    <button class="active" data-view="dashboard">⌂　داشبورد</button>
+    <button data-view="scores">🏆　امتیازها</button>
+    <button data-view="teacher">✚　پنل معلم</button>
+    <button data-view="quiz">🧠　آزمون آنلاین</button>
+    <button data-view="homework">📚　تکالیف و برنامه</button>
+    <button data-view="ideas">💡　پیشنهادهای کلاس</button>
+  </nav>
+  <div class="side-note"><strong>✨ یادآوری امروز</strong>هر تلاش کوچکی، یک قدم به موفقیت نزدیک‌ترت می‌کند.</div>
+</aside>
+<main>
+  <header class="topbar"><div><div class="eyebrow">فضای یادگیری و پیشرفت</div><h1 id="pageTitle">داشبورد کلاس</h1><div class="muted">به پایگاه افتخار کلاس ششم ۳ خوش آمدید. <span id="currentUserLabel"></span></div></div><div class="top-actions"><div class="date-pill" id="today"></div><button class="secondary" id="quickQuiz">شروع آزمون</button></div></header>
+
+  <section class="view active" id="view-dashboard">
+    <div class="hero"><div><div class="eyebrow" style="color:#dcd9ff">با هم یاد می‌گیریم، با هم می‌درخشیم</div><h2>هر روز، یک فرصت تازه برای پیشرفت! 🚀</h2><p>اینجا جای تلاش، همکاری، یادگیری و جشن گرفتن موفقیت‌های کوچک و بزرگ ماست.</p></div><div class="hero-badge"><span>امتیازهای ثبت‌شده</span><strong id="heroPoints">۰</strong><small>برای همه دانش‌آموزان</small></div></div>
+    <div class="stats">
+      <div class="stat"><div class="stat-top"><span>دانش‌آموزان ثبت‌شده</span><div class="stat-icon">👩‍🎓</div></div><strong id="studentCount">۵</strong><small>قابل ویرایش از پنل معلم</small></div>
+      <div class="stat"><div class="stat-top"><span>مجموع امتیازها</span><div class="stat-icon">⭐</div></div><strong id="totalPoints">۰</strong><small>امتیازهای تشویقی</small></div>
+      <div class="stat"><div class="stat-top"><span>آزمون‌های انجام‌شده</span><div class="stat-icon">🧠</div></div><strong id="quizCount">۰</strong><small>در همین مرورگر</small></div>
+      <div class="stat"><div class="stat-top"><span>پیشنهادهای کلاس</span><div class="stat-icon">💡</div></div><strong id="ideaCount">۰</strong><small>ایده‌هایی برای بهتر شدن</small></div>
+    </div>
+    <div class="content-grid">
+      <div class="panel"><div class="panel-head"><h3>🏆 دانش‌آموزان برتر</h3><button class="ghost" data-go="scores">مشاهده همه</button></div><div class="table-wrap"><table><thead><tr><th>رتبه</th><th>دانش‌آموز</th><th>امتیاز</th><th>نشان</th></tr></thead><tbody id="topStudents"></tbody></table></div></div>
+      <div class="panel"><div class="panel-head"><h3>📌 برنامه نزدیک کلاس</h3><button class="ghost" data-go="homework">جزئیات</button></div><div class="list" id="upcomingList"></div></div>
+    </div>
+    <div class="panel"><div class="panel-head"><h3>🌟 مسیر پیشرفت کلاس</h3><span class="muted">هدف نمونه: ۱۰۰۰ امتیاز</span></div><div style="display:flex;justify-content:space-between;gap:10px;font-size:13px"><strong>پیشرفت جمعی</strong><span id="progressLabel">۰٪</span></div><div class="progress"><span id="classProgress" style="width:0%"></span></div></div>
+  </section>
+
+  <section class="view" id="view-scores">
+    <div class="panel"><div class="panel-head"><h3>جدول امتیازهای کلاس</h3><button class="secondary" id="exportScores">دانلود جدول CSV</button></div><p class="muted">این امتیازها نمونه‌اند و می‌توانی از پنل معلم نام‌ها و امتیازها را تغییر بدهی.</p><div class="table-wrap"><table><thead><tr><th>رتبه</th><th>نام دانش‌آموز</th><th>امتیاز</th><th>سطح</th></tr></thead><tbody id="allStudents"></tbody></table></div></div>
+  </section>
+
+  <section class="view" id="view-teacher">
+    <div class="panel"><div class="panel-head"><h3>✚ پنل معلم — ثبت تشویق</h3><span class="tag">دموی محلی</span></div><div class="notice">ورود معلم با شماره تعیین‌شده در این نسخه فعال است. توجه: چون این سایت فقط یک فایل HTML است، این ورود امنیت واقعی ندارد و اطلاعات فقط در همین مرورگر ذخیره می‌شود.</div>
+      <form id="studentForm" class="form-grid"><label class="field">نام دانش‌آموز<input id="studentName" required maxlength="45" placeholder="مثلاً سارا احمدی"></label><label class="field">امتیاز تشویقی<input id="studentPoints" required type="number" min="1" max="100" value="5"></label><label class="field full">دلیل تشویق<select id="studentReason"><option>تلاش و پشتکار</option><option>همکاری با دوستان</option><option>نظم و مسئولیت‌پذیری</option><option>پاسخ‌گویی در کلاس</option><option>پیشرفت درسی</option><option>کمک به دیگران</option></select></label><div class="field full"><button type="submit">ثبت امتیاز تشویقی ⭐</button></div></form>
+    </div>
+    <div class="panel"><div class="panel-head"><h3>مدیریت فهرست دانش‌آموزان</h3></div><form id="addStudentForm" class="form-grid"><label class="field">نام دانش‌آموز جدید<input id="newStudentName" required maxlength="45" placeholder="نام و نام خانوادگی"></label><div class="field" style="align-self:end"><button type="submit">افزودن دانش‌آموز</button></div></form><div class="table-wrap" style="margin-top:15px"><table><thead><tr><th>نام</th><th>امتیاز</th><th>عملیات</th></tr></thead><tbody id="manageStudents"></tbody></table></div><div class="button-row"><button class="danger" id="resetData" type="button">بازنشانی اطلاعات نمونه</button></div></div>
+  </section>
+
+  <section class="view" id="view-quiz">
+    <div class="panel"><div class="panel-head"><h3>🧠 آزمون کوتاه کلاس ششم</h3><span class="tag">۵ پرسش · امتیاز خودکار</span></div><p class="muted">پاسخ هر سؤال را انتخاب کن و در پایان نتیجه‌ات را ببین. برای هر پاسخ درست ۱۰ امتیاز می‌گیری.</p><form id="quizForm"><div id="quizQuestions"></div><button type="submit">ثبت پاسخ‌ها و دیدن نتیجه</button></form><div id="quizResult"></div></div>
+  </section>
+
+  <section class="view" id="view-homework">
+    <div class="panel"><div class="panel-head"><h3>📚 تکالیف و برنامه هفتگی</h3><button class="secondary" id="addHomeworkBtn">افزودن تکلیف</button></div><div class="notice">برنامه زیر نمونه است؛ با برنامه واقعی کلاس خودتان جایگزینش کنید.</div><div class="list" id="homeworkList"></div></div>
+    <div class="panel" id="homeworkFormPanel" style="display:none"><div class="panel-head"><h3>افزودن تکلیف یا برنامه</h3></div><form id="homeworkForm" class="form-grid"><label class="field">عنوان<input id="hwTitle" required maxlength="80" placeholder="مثلاً تمرین ریاضی"></label><label class="field">روز<select id="hwDay"><option>شنبه</option><option>یکشنبه</option><option>دوشنبه</option><option>سه‌شنبه</option><option>چهارشنبه</option><option>پنجشنبه</option></select></label><label class="field full">توضیحات<input id="hwDetail" maxlength="180" placeholder="صفحه یا توضیح کوتاه"></label><div class="field full"><button type="submit">ذخیره برنامه</button></div></form></div>
+    <div class="panel"><div class="panel-head"><h3>🗓️ برنامه هفتگی نمونه</h3></div><div class="week-grid" id="weekGrid"></div></div>
+  </section>
+
+  <section class="view" id="view-ideas">
+    <div class="panel"><div class="panel-head"><h3>💡 پیشنهادها و نظرسنجی کلاس</h3><span class="tag">ایده‌های خوب را با هم بسازیم</span></div><p class="muted">پیشنهاد محترمانه برای بهتر شدن کلاس ثبت کن. از نوشتن اطلاعات شخصی خودداری کن.</p><form id="ideaForm" class="form-grid"><label class="field">موضوع<select id="ideaCategory"><option>روش یادگیری</option><option>فعالیت گروهی</option><option>نظم کلاس</option><option>بازی آموزشی</option><option>پیشنهاد دیگر</option></select></label><label class="field">نام (اختیاری)<input id="ideaName" maxlength="35" placeholder="می‌توانی خالی بگذاری"></label><label class="field full">پیشنهاد تو<textarea id="ideaText" required maxlength="300" rows="3" placeholder="مثلاً هفته‌ای یک مسابقه علمی داشته باشیم..."></textarea></label><div class="field full"><button type="submit">ثبت پیشنهاد 💡</button></div></form></div>
+    <div class="panel"><div class="panel-head"><h3>پیشنهادهای ثبت‌شده</h3><span class="muted">برای این مرورگر</span></div><div id="ideasList"></div></div>
+    <div class="panel"><div class="panel-head"><h3>📊 نظرسنجی سریع</h3></div><p>کدام فعالیت را بیشتر دوست داری؟</p><div id="pollOptions"></div><div class="muted" id="pollTotal"></div></div>
+  </section>
+  <div class="footer">ساخته‌شده برای یادگیری، همکاری و پیشرفت کلاس ششم ۳ · نسخه نمایشی</div>
+</main>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const STORE_KEY='class6_3_dashboard_v2';
+const TEACHER_PHONE='09139285679';
+const TEACHER_NAME='محمد حسن اصغری';
+// این نقش در نسخه تک‌فایلی قابل مخفی‌سازی از رابط کاربری است، اما احراز هویت امن نیست.
+const OWNER_PHONE='09965072044';
+const CLASS_NAMES=['محمد زارعی','احسان میرزائیان','ابوالفضل معصومی','میثم جعفری','محمدحسن باقری','ابوالفضل ابراهیمی','امیرعلی جعفری','حمیدرضا رمضانی','امیرعباس عباسی','محمد طاها طهماسبی','سهیل حیدری','صدرا بنویدی','حسین محمدی','علیرضا آقابابایی','میلاد جابر','محمد مهدی رمضانی','بهادر حکیمی','حمیدرضا علیان','عرفان مولایی','محمد جواد محمودی','محمد جواد ابراهیمی','محمد جواد کاظمی'];
+const initialData={
+ students:CLASS_NAMES.map((name,i)=>({id:i+1,name,points:0,reason:'هنوز امتیازی ثبت نشده'})),
+ quizCount:0,ideas:[],homework:[
+  {id:1,title:'تمرین ریاضی',day:'شنبه',detail:'تمرین‌های تعیین‌شده توسط معلم را کامل کنید.'},
+  {id:2,title:'مرور فارسی',day:'یکشنبه',detail:'درس خوانده‌شده را بخوانید و واژه‌های مهم را مرور کنید.'},
+  {id:3,title:'مطالعات اجتماعی',day:'دوشنبه',detail:'نکته‌های مهم درس را مرور کنید.'}
+ ],poll:{'بازی آموزشی':0,'فعالیت گروهی':0,'آزمایش علمی':0,'مسابقه کتاب‌خوانی':0},voted:false
+};
+let data=loadData();
+let currentUser=null;
+const loginName=document.getElementById('loginName');
+function applyRole(){
+ const canManage=currentUser&&(currentUser.role==='teacher'||currentUser.role==='owner');
+ document.querySelectorAll('[data-view="teacher"]').forEach(el=>el.style.display=canManage?'block':'none');
+ document.querySelectorAll('[data-go="teacher"]').forEach(el=>el.style.display=canManage?'':'none');
+ if(!canManage && document.getElementById('view-teacher').classList.contains('active'))go('dashboard');
+}
+function restoreLogin(){try{const raw=localStorage.getItem('class6_3_login_v1');if(raw){currentUser=JSON.parse(raw);document.getElementById('loginGate').style.display='none';document.getElementById('currentUserLabel').textContent=' · '+currentUser.name;applyRole();return true}}catch(e){}return false}
+document.getElementById('loginForm').addEventListener('submit',e=>{
+ e.preventDefault();const name=loginName.value.trim().replace(/\s+/g,' '),phone=document.getElementById('loginPhone').value.replace(/[\s()-]/g,'');
+ const err=document.getElementById('loginError');
+ if(name.length<3){err.textContent='نام و نام خانوادگی را کامل وارد کن.';return}
+ if(!/^\+?[0-9]{8,15}$/.test(phone)){err.textContent='شماره تلفن را درست وارد کن.';return}
+ let role='student',displayName=name;
+ if(phone===OWNER_PHONE){role='owner';displayName=name;}
+ else if(phone===TEACHER_PHONE){role='teacher';displayName=TEACHER_NAME;}
+ currentUser={name:displayName,role,phone};
+ try{localStorage.setItem('class6_3_login_v1',JSON.stringify(currentUser))}catch(e){}
+ document.getElementById('loginGate').style.display='none';document.getElementById('currentUserLabel').textContent=' · '+currentUser.name;applyRole();toast(role==='owner'?'ورود مدیر سایت انجام شد.':role==='teacher'?'خوش آمدید آقای '+TEACHER_NAME:'خوش آمدی '+currentUser.name);
+});
+
+function loadData(){try{const saved=localStorage.getItem(STORE_KEY);return saved?{...structuredClone(initialData),...JSON.parse(saved)}:structuredClone(initialData)}catch(e){return structuredClone(initialData)}}
+function saveData(){try{localStorage.setItem(STORE_KEY,JSON.stringify(data))}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function fa(n){return Number(n).toLocaleString('fa-IR')}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400)}
+const viewTitles={dashboard:'داشبورد کلاس',scores:'جدول امتیازها',teacher:'پنل معلم',quiz:'آزمون آنلاین',homework:'تکالیف و برنامه هفتگی',ideas:'پیشنهادها و نظرسنجی'};
+function go(view){if(view==='teacher'&&(!currentUser||!['teacher','owner'].includes(currentUser.role))){toast('این بخش فقط برای معلم یا مدیر سایت است.');return}document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+view));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===view));document.getElementById('pageTitle').textContent=viewTitles[view]||'کلاس ششم ۳';window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.view)));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+document.getElementById('quickQuiz').addEventListener('click',()=>go('quiz'));
+const dateText=new Intl.DateTimeFormat('fa-IR',{weekday:'long',day:'numeric',month:'long'}).format(new Date());
+document.getElementById('today').textContent=dateText;
+function sortedStudents(){return [...data.students].sort((a,b)=>b.points-a.points||a.name.localeCompare(b.name,'fa'))}
+function renderScores(){
+ const sorted=sortedStudents(),total=data.students.reduce((s,x)=>s+x.points,0);
+ document.getElementById('studentCount').textContent=fa(data.students.length);document.getElementById('totalPoints').textContent=fa(total);document.getElementById('heroPoints').textContent=fa(total);document.getElementById('quizCount').textContent=fa(data.quizCount);document.getElementById('ideaCount').textContent=fa(data.ideas.length);
+ const rows=sorted.map((s,i)=>`<tr><td><span class="rank">${fa(i+1)}</span></td><td><div class="student"><span class="avatar">${esc(s.name.trim().charAt(0)||'؟')}</span><strong>${esc(s.name)}</strong></div></td><td class="points">${fa(s.points)}</td><td>${i===0?'<span class="tag">ستاره کلاس</span>':i<3?'<span class="tag">پرتلاش</span>':'<span class="muted">در مسیر پیشرفت</span>'}</td></tr>`).join('');
+ document.getElementById('topStudents').innerHTML=rows||'<tr><td colspan="4">هنوز دانش‌آموزی ثبت نشده است.</td></tr>';
+ document.getElementById('allStudents').innerHTML=rows||'<tr><td colspan="4">هنوز دانش‌آموزی ثبت نشده است.</td></tr>';
+ document.getElementById('manageStudents').innerHTML=sorted.map(s=>`<tr><td>${esc(s.name)}</td><td class="points">${fa(s.points)}</td><td><button class="danger" data-remove="${s.id}">حذف</button></td></tr>`).join('')||'<tr><td colspan="3">فهرست خالی است.</td></tr>';
+ document.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',()=>{const s=data.students.find(x=>x.id===Number(b.dataset.remove));if(s&&confirm('دانش‌آموز «'+s.name+'» حذف شود؟')){data.students=data.students.filter(x=>x.id!==s.id);saveData();renderAll();toast('دانش‌آموز حذف شد.')}}));
+ const pct=Math.min(100,Math.round(total/1000*100));document.getElementById('progressLabel').textContent=fa(pct)+'٪';document.getElementById('classProgress').style.width=pct+'%';
+}
+document.getElementById('studentForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('studentName').value.trim(),points=Number(document.getElementById('studentPoints').value),reason=document.getElementById('studentReason').value;if(!name||!Number.isFinite(points)||points<1||points>100)return;let student=data.students.find(s=>s.name.trim().toLocaleLowerCase()===name.toLocaleLowerCase());if(!student){student={id:Date.now(),name,points:0,reason};data.students.push(student)}student.points+=points;student.reason=reason;saveData();e.target.reset();document.getElementById('studentPoints').value=5;renderAll();toast('امتیاز تشویقی ثبت شد ⭐')});
+document.getElementById('addStudentForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('newStudentName').value.trim();if(!name)return;if(data.students.some(s=>s.name.toLocaleLowerCase()===name.toLocaleLowerCase()))return toast('این نام از قبل وجود دارد.');data.students.push({id:Date.now(),name,points:0,reason:'هنوز امتیازی ثبت نشده'});saveData();e.target.reset();renderAll();toast('دانش‌آموز اضافه شد.')});
+document.getElementById('resetData').addEventListener('click',()=>{if(confirm('همه تغییرات این سایت پاک و اطلاعات نمونه برگردانده شود؟')){data=structuredClone(initialData);saveData();renderAll();toast('اطلاعات نمونه بازنشانی شد.')}});
+document.getElementById('exportScores').addEventListener('click',()=>{const lines=[['نام دانش‌آموز','امتیاز','دلیل آخرین تشویق'],...sortedStudents().map(s=>[s.name,s.points,s.reason])];const csv='\\ufeff'+lines.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\\r\\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'}));a.download='emtiaz-haye-class6-3.csv';a.click();URL.revokeObjectURL(a.href)});
+const questions=[
+ {q:'حاصل ۸ × ۷ کدام است؟',opts:['۵۴','۵۶','۶۴','۴۸'],a:1,why:'۸ ضربدر ۷ برابر ۵۶ است.'},
+ {q:'کدام جمله پرسشی است؟',opts:['امروز هوا خوب است.','کتابت را باز کن.','آیا تکالیفت را نوشتی؟','چه روز زیبایی!'],a:2,why:'جمله پرسشی با سؤال همراه است و معمولاً با علامت سؤال پایان می‌یابد.'},
+ {q:'کدام مورد منبع طبیعی آب شیرین است؟',opts:['یخچال طبیعی','آب دریا','نفت خام','گاز طبیعی'],a:0,why:'یخچال‌های طبیعی ذخیره‌ای از آب شیرین هستند.'},
+ {q:'کدام رفتار نمونه همکاری است؟',opts:['پنهان کردن وسایل گروه','گوش ندادن به دیگران','تقسیم منصفانه کارها','مسخره کردن اشتباه دوست'],a:2,why:'در همکاری، اعضا مسئولیت‌ها را تقسیم می‌کنند و به هم کمک می‌کنند.'},
+ {q:'یک ساعت چند دقیقه است؟',opts:['۳۰ دقیقه','۴۵ دقیقه','۶۰ دقیقه','۱۰۰ دقیقه'],a:2,why:'هر ساعت برابر با ۶۰ دقیقه است.'}
+];
+function renderQuiz(){document.getElementById('quizQuestions').innerHTML=questions.map((q,i)=>`<div class="quiz-question"><h4>${fa(i+1)}. ${q.q}</h4>${q.opts.map((o,j)=>`<label class="option"><input type="radio" name="q${i}" value="${j}" required> <span>${esc(o)}</span></label>`).join('')}</div>`).join('');document.getElementById('quizResult').innerHTML=''}
+document.getElementById('quizForm').addEventListener('submit',e=>{e.preventDefault();let score=0,feedback=[];questions.forEach((q,i)=>{const picked=document.querySelector(`input[name="q${i}"]:checked`);const ok=picked&&Number(picked.value)===q.a;if(ok)score+=10;feedback.push(`<li>${ok?'✅':'📘'} ${esc(q.why)}</li>`)});data.quizCount++;saveData();renderScores();document.getElementById('quizResult').innerHTML=`<div class="result"><h3>نتیجه تو: ${fa(score)} از ۵۰ امتیاز</h3><p>${score===50?'آفرین! همه پاسخ‌ها درست بود. 🌟':score>=30?'خوب بود! با مرور پاسخ‌ها بهتر هم می‌شوی.':'تلاش خوبی بود؛ پاسخ‌ها را مرور کن و دوباره امتحان کن.'}</p><ul>${feedback.join('')}</ul><button type="button" class="secondary" id="retryQuiz">تلاش دوباره</button></div>`;document.getElementById('retryQuiz').addEventListener('click',renderQuiz);toast('نتیجه آزمون ثبت شد.')});
+const weekSample=[['شنبه','ریاضی','فارسی','علوم'],['یکشنبه','فارسی','مطالعات','هنر'],['دوشنبه','علوم','ریاضی','قرآن'],['سه‌شنبه','مطالعات','فارسی','ورزش'],['چهارشنبه','ریاضی','هدیه‌های آسمان','مرور هفتگی']];
+function renderHomework(){document.getElementById('homeworkList').innerHTML=data.homework.length?data.homework.map(h=>`<div class="list-item"><div class="list-icon">📘</div><div style="flex:1"><strong>${esc(h.title)} <span class="tag">${esc(h.day)}</span></strong><small>${esc(h.detail||'بدون توضیح')}</small></div><button class="danger" data-hwremove="${h.id}">حذف</button></div>`).join(''):'<div class="empty">هنوز تکلیفی ثبت نشده است.</div>';document.querySelectorAll('[data-hwremove]').forEach(b=>b.addEventListener('click',()=>{data.homework=data.homework.filter(h=>h.id!==Number(b.dataset.hwremove));saveData();renderHomework();renderUpcoming();toast('مورد حذف شد.')}));document.getElementById('weekGrid').innerHTML=weekSample.map(day=>`<div class="day-card"><h4>${day[0]}</h4>${day.slice(1).map((subject,i)=>`<p>• ${subject}</p>`).join('')}</div>`).join('')}
+function renderUpcoming(){const items=data.homework.slice(0,3);document.getElementById('upcomingList').innerHTML=items.length?items.map(h=>`<div class="list-item"><div class="list-icon">📅</div><div><strong>${esc(h.title)}</strong><small>${esc(h.day)} · ${esc(h.detail||'برنامه کلاس')}</small></div></div>`).join(''):'<div class="empty">برنامه‌ای ثبت نشده است.</div>'}
+document.getElementById('addHomeworkBtn').addEventListener('click',()=>{const p=document.getElementById('homeworkFormPanel');p.style.display=p.style.display==='none'?'block':'none'});
+document.getElementById('homeworkForm').addEventListener('submit',e=>{e.preventDefault();data.homework.unshift({id:Date.now(),title:document.getElementById('hwTitle').value.trim(),day:document.getElementById('hwDay').value,detail:document.getElementById('hwDetail').value.trim()});saveData();e.target.reset();document.getElementById('homeworkFormPanel').style.display='none';renderHomework();renderUpcoming();toast('برنامه ذخیره شد.')});
+document.getElementById('ideaForm').addEventListener('submit',e=>{e.preventDefault();data.ideas.unshift({id:Date.now(),category:document.getElementById('ideaCategory').value,name:document.getElementById('ideaName').value.trim(),text:document.getElementById('ideaText').value.trim(),date:new Date().toLocaleDateString('fa-IR')});saveData();e.target.reset();renderIdeas();renderScores();toast('پیشنهاد ثبت شد؛ ممنون از ایده‌ات!')});
+function renderIdeas(){document.getElementById('ideasList').innerHTML=data.ideas.length?data.ideas.map(x=>`<div class="list-item"><div class="list-icon">💡</div><div><strong>${esc(x.category)} · ${esc(x.name||'بدون نام')}</strong><small>${esc(x.date)}</small><div>${esc(x.text)}</div></div></div>`).join(''):'<div class="empty">هنوز پیشنهادی ثبت نشده؛ اولین ایده را تو بنویس!</div>';const total=Object.values(data.poll).reduce((a,b)=>a+b,0);document.getElementById('pollOptions').innerHTML=Object.entries(data.poll).map(([name,count])=>`<div class="vote-option"><div style="flex:1"><div>${esc(name)}</div><div class="progress"><span style="width:${total?count/total*100:0}%"></span></div></div><strong>${fa(count)}</strong><button class="secondary" data-vote="${esc(name)}" ${data.voted?'disabled':''}>انتخاب</button></div>`).join('');document.getElementById('pollTotal').textContent=`مجموع رأی‌ها: ${fa(total)}${data.voted?' · رأی شما ثبت شده است.':' · هر مرورگر یک رأی ثبت می‌کند.'}`;document.querySelectorAll('[data-vote]').forEach(b=>b.addEventListener('click',()=>{if(data.voted)return;data.poll[b.dataset.vote]++;data.voted=true;saveData();renderIdeas();toast('رأی تو ثبت شد!')}))}
+function renderAll(){renderScores();renderHomework();renderUpcoming();renderIdeas()}
+renderQuiz();renderAll();restoreLogin();
+</script>
+</body>
+</html>
